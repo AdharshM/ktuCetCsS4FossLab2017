@@ -1,0 +1,21 @@
+#!/bin/sh
+
+if [ "$#" -eq 2 ]
+then
+  FILE=$1
+  NAME=$2
+  if [ -f $FILE ]; then
+    if grep -q "$NAME" "$FILE";
+    then
+      echo "Username already exist"
+    else
+      echo "User name not found - will be added at the end"
+      echo "$NAME" >> classlist
+    fi
+  else
+    echo "File $FILE does not exist."
+fi
+else
+echo "Arguments are not equals to 2"
+exit 1
+fi
