@@ -1,0 +1,22 @@
+Printing Column or Field
+
+You can instruct AWK to print only certain columns from the input field. The following example demonstrates this −
+
+awk '{print $3 "\t" $4}' marks.txt
+
+Printing All Lines
+
+By default, AWK prints all the lines that match pattern.
+Example
+
+awk '/a/ {print $0}' marks.txt
+
+Printing Columns by Pattern
+
+When a pattern match succeeds, AWK prints the entire record by default. But you can instruct AWK to print only certain fields. For instance, the following example prints the third and fourth field when a pattern match succeeds.
+Example
+
+awk '/a/ {print $3 "\t" $4}' marks.txt
+
+Reference:
+https://www.tutorialspoint.com/awk/awk_basic_examples.htm
