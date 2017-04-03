@@ -10,7 +10,7 @@ echo $0
 cd ~
 
 #Your operating system type
-uname -a
+uname
 
 #Your current path setting
 echo $PATH
