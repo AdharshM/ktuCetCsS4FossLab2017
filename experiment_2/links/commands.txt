@@ -1,0 +1,13 @@
+#link two files - symlink
+
+link FILE1 FILE2
+
+#link examples
+
+link computer.txt hope.txt
+
+#Related commands
+
+ln — Create a link, or a symbolic link, to a file or directory.
+ls — List the contents of a directory or directories.
+unlink — Remove a file.

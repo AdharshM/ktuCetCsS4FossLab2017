@@ -1,0 +1,8 @@
+1)
+chown user:group filename
+change file ownership
+
+2)
+chown -R user:group filename
+recursive change of file/folder ownership
+

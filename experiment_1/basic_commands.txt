@@ -28,3 +28,11 @@ remove folder
 touch
 touch an instance of a file
 
+8)
+./
+execution
+
+9)
+./file $
+background execution
+

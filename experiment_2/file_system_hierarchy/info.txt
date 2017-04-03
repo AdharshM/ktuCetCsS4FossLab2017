@@ -1,0 +1,29 @@
+Like UNIX, Linux chooses to have a single hierarchical directory structure. Everything starts from the root directory, represented by /, and then expands into sub-directories instead of having so-called 'drives'. In the Windows environment, one may put one's files almost anywhere: on C drive, D drive, E drive etc. Such a file system is called a hierarchical structure and is managed by the programs themselves (program directories), not by the operating system. On the other hand, Linux sorts directories descending from the root directory / according to their importance to the boot process. 
+
+The Root Directory
+To comply with the FSSTND the following directories, or symbolic links to directories, are required in /. 
+       /bin       Essential command binaries
+       /boot      Static files of the boot loader
+       /dev       Device files
+       /etc       Host-specific system configuration
+       /lib       Essential shared libraries and kernel modules
+       /media     Mount point for removeable media
+       /mnt       Mount point for mounting a filesystem temporarily
+       /opt       Add-on application software packages
+       /sbin      Essential system binaries
+       /srv       Data for services provided by this system
+       /tmp       Temporary files
+       /usr       Secondary hierarchy
+       /var       Variable data
+
+The following directories, or symbolic links to directories, must be in /, if the corresponding subsystem is installed:
+
+
+     / -- the root directory
+     /home User home directories (optional)
+     /lib<qual> Alternate format essential shared libraries
+                      (optional)
+     /root Home directory for the root user (optional)
+
+Reference
+http://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/Linux-Filesystem-Hierarchy.html
