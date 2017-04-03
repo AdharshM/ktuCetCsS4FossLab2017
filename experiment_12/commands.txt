@@ -1,0 +1,74 @@
+1)
+curl
+
+curl is a tool to transfer data from or to a server, using one of the supported protocols (DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET and TFTP). The command is designed to work without user interaction.
+
+curl offers a busload of useful tricks like proxy support, user authentication, FTP upload, HTTP post, SSL connections, cookies, file transfer resume, Metalink, and more. As you will see below, the number of features will make your head spin!
+
+curl is powered by libcurl for all transfer-related features. See libcurl(3) for details. 
+
+curl www.google.com
+
+Reference:
+https://curl.haxx.se/docs/manpage.html
+
+2)
+wget
+
+used to download files
+
+wget $fileurl
+
+3)
+ftp
+
+Connect using FTP
+
+To connect to another computer using FTP at the MS-DOS prompt, command line, or Linux shell type FTP and press Enter. Once in FTP, use the open command to connect to the FTP server, as shown in the example below.
+
+open ftp.example.com
+
+Send and receive a file in FTP
+
+To get files from the server onto your own computer, use the get command as shown in the example below. In this example, you would get the file myfile.htm.
+
+get myfile.htm
+
+To send a file from your computer to the computer you are connected to, assuming you have the rights, use the send command as shown in the example below. In this example, we are sending the myfile.htm to the current directory.
+
+send myfile.htm
+
+Reference:
+https://www.cyberciti.biz/faq/find-linux-distribution-name-version-number/
+
+4)
+ssh
+
+Using the command-line
+
+All modern Unix-like systems (Linux, OS X, BSDs, and others) include a command-line ssh client. To login to your computer from a Unix-like machine, go to a command-line and type:
+
+ssh <username>@<computer name or IP address>
+
+For example:
+
+ssh joe@laptop
+
+5)
+grep
+
+How do I use grep command to search a file?
+
+Search /etc/passwd file for boo user, enter:
+$ grep boo /etc/passwd
+
+You can force grep to ignore word case i.e match boo, Boo, BOO and all other combination with the -i option:
+$ grep -i "boo" /etc/passwd
+
+Use grep recursively
+
+You can search recursively i.e. read all files under each directory for a string “192.168.1.5”
+$ grep -r "192.168.1.5" /etc/
+
+Reference:
+https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/
