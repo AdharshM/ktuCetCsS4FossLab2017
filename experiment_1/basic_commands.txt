@@ -36,3 +36,6 @@ execution
 ./file $
 background execution
 
+10)
+tree
+list directory in tree structure
